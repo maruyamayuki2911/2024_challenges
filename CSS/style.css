@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+/* ＜＜ヘッダー＞＞ */
+header {
+    display: flex;
+}
+
+.header_logo {
+    width: 150px;
+    height: 150px;
+    margin-right: 150px;
+    margin-left: 20px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 65px;
+    width: 60%;
+    font-weight: bold;
+}
+
+/* 未訪問リンク装飾 */
+li>a:link {
+    color: black
+}
+
+/* 訪問済みのリンク装飾 */
+li>a:visited {
+    color: black;
+}
+
+/* リンク罫線初期設定 */
+li>a {
+    text-decoration: none;
+    position:relative;
+    color: black;
+}
+
+/*罫線アニメーション設定*/
+li>a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform,0.2s ease-in-out;
+}
+
+/* リンクホバー時のアニメーション */
+li>a:hover::before{
+    transform-origin: center;
+    transform:scaleX(1);
+}
+
+/* ＜＜メイン＞＞ */
+
+main{
+    background-color: black;
+}
+
+/* メイン画像 */
+
+.main_img {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+    border: solid 1px gray;
+}
+
+/* メニュー */
+.menu_container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h2{
+    width: 300px;
+    border: solid 2px aliceblue ;
+    color: aliceblue;
+    text-align: center;
+    margin:100px auto 100px auto;
+    border-radius: 10px;
+    
+}
+
+.menu_img {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+    border: solid 1px gray;
+}
+
+.menu_item{
+    font-size: 20px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.sidemenu_container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.content_img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border:  1px gray;
+}
+
+.back_top_area{
+    text-align: right;
+}
+
+.back_top {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.commitment_conteiner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.commitment_img{
+    width: 100px;
+    margin-top:250px ;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.commitment_text{
+    font-size: 20px;
+    color: aliceblue;
+    text-align: left;
+}
+
+.form_label{
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.text_box{
+    height: 30px;
+    font-size: 20px;
+}
+
+.contact_textarea{
+    width: 300px;
+    height: 100px;
+}
+
+.submit_btn{
+    width: 60px;
+    font-size: 20px;
+}
+
+form{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    /* text-align: left; */
+}
+
+footer{
+    background-color: aliceblue;
+    width: 100%;
+    height: 50px;
+}
+
+.footer_area{
+    margin-top: 20px;
+    text-align: center;
+}
