@@ -119,11 +119,12 @@ h2{
     margin-bottom: 20px;
 }
 
-.content_img {
-    width: 200px;
-    height: 200px;
+.sidemenu_img {
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
-    border:  1px gray;
+    border: solid 1px gray;
 }
 
 .back_top_area{
