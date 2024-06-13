@@ -120,10 +120,11 @@ h2{
 }
 
 .content_img {
+    object-fit: cover;
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border:  1px gray;
+    border: solid 1px gray;
 }
 
 .back_top_area{
